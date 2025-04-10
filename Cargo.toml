@@ -1,9 +1,14 @@
 [workspace]
 members = [
+    "rust-plactice1",
     "section1/section1-1",
-    "section1/section1-2/plactice",
+    "section1/section1-2/plactice/plactice-1",
+    "section1/section1-2/plactice/plactice-2",
     "section1/section1-2/section1-2-1",
     "section1/section1-2/section1-2-2",
     "section1/section1-2/section1-2-3",
+    "section1/section1-2/section1-2-4",
+    "section1/section1-3/section1-3-1", "section1/section1-3/section1-3-2", "section1/section1-3/section1-3-3",
+    "section2/section2-1",
 ]
 resolver = "3"

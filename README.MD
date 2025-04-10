@@ -15,22 +15,22 @@
 │   ├── section1-1/
 │   ├── section1-2/
 │   ├── section1-3/
-│   └── exercises/
+│   └── plactice/
 ├── section2/   # 実用的な機能とライブラリ
 │   ├── section2-1/
 │   ├── section2-2/
 │   ├── section2-3/
-│   └── exercises/
+│   └── plactice/
 ├── section3/   # 実践的なテクニック
 │   ├── section3-1/
 │   ├── section3-2/
 │   ├── section3-3/
-│   └── exercises/
+│   └── plactice/
 ├── section4/   # 発展的なトピック
 │   ├── section4-1/
 │   ├── section4-2/
 │   ├── section4-3/
-│   └── exercises/
+│   └── plactice/
 └── README.md  
 ```
 
