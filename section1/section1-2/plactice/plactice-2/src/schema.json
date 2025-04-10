@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "user1": {
+            "type": "object",
+            "required": [
+                "age",
+                "email",
+                "name"
+            ],
+            "properties": {
+                "age": {
+                    "type": "string",
+                    "description": "ユーザーの年齢"
+                },
+                "email": {
+                    "type": "string",
+                    "format": "email",
+                    "description": "ユーザーのメールアドレス"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "ユーザーの名前"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "user1"
+    ],
+    "additionalProperties": false
+}
