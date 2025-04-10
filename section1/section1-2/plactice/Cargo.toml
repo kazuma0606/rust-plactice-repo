@@ -1,7 +1,6 @@
 [package]
-name = "section1-1"
+name = "plactice"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-# colored = "2.0"

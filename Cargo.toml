@@ -1,3 +1,9 @@
 [workspace]
-members = ["rust-practice1"]
+members = [
+    "section1/section1-1",
+    "section1/section1-2/plactice",
+    "section1/section1-2/section1-2-1",
+    "section1/section1-2/section1-2-2",
+    "section1/section1-2/section1-2-3",
+]
 resolver = "3"
