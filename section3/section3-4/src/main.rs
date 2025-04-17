@@ -2,8 +2,7 @@ use clap::Parser;
 use reqwest::Client;
 use anyhow::Result;
 use anyhow::Context;
-
-const API_KEY: &str = "dc57345e4cd7ce96d3b09534bf50aea0";
+use std::env;
 
 #[derive(Parser)]
 struct Args {
@@ -12,9 +11,12 @@ struct Args {
 }
 
 async fn fetch_weather(city: &str) -> Result<WeatherResponse> {
+    let api_key = env::var("OPENWEATHER_API_KEY")
+        .with_context(|| "OPENWEATHER_API_KEYが設定されていません")?;
+
     let url = format!(
         "https://api.openweathermap.org/data/2.5/weather?q={}&appid={}&units=metric",
-        city, API_KEY
+        city, api_key
     );
 
     let res = Client::new()
@@ -53,6 +55,9 @@ struct Weather {
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    dotenv::from_path("C:\\Users\\yoshi\\rust-mastery\\section3\\section3-4\\.env")
+    .with_context(|| ".envファイルを読み込めませんでした")?;
+
     let args = Args::parse();
     let weather = fetch_weather(&args.city).await?;
 
