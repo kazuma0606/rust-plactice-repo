@@ -1,10 +1,10 @@
 [package]
-name = "section4-3-1"
+name = "section4-3-2"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-wasm-bindgen = "0.2"
 
 [lib]
+name = "rust_lib"
 crate-type = ["cdylib"]

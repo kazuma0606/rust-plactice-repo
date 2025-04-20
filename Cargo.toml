@@ -42,6 +42,6 @@ members = [
     "section4/section4-2/section4-2-2",
     "section4/section4-2/section4-2-3",
     "section4/section4-2/section4-2-4",
-    "section4/section4-3/section4-3-1",
+    "section4/section4-3/section4-3-1", "section4/section4-3/section4-3-2",
 ]
 resolver = "3"
